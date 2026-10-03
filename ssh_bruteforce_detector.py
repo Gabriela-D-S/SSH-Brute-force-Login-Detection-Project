@@ -39,8 +39,8 @@ PATTERNS = {
     "invalid":  re.compile(TIMESTAMP + r".*Invalid user (?P<user>\S*) from " + IP),
 }
 
-"""Turn raw log lines into a DataFrame of (timestamp, event, user, ip) for structured analysis"""
 def parse_log(path):
+    """Turn raw log lines into a DataFrame of (timestamp, event, user, ip) for structured analysis"""
     rows = []
     with open(path, encoding="utf-8", errors="ignore") as f:
         for line in f:
@@ -54,8 +54,9 @@ def parse_log(path):
     df["ts"] = pd.to_datetime(f"{LOG_YEAR} " + df["ts"], format="%Y %b %d %H:%M:%S")
     return df.sort_values("ts").reset_index(drop=True)
 
-"""For each IP, the highest number of failed logins inside any WINDOW."""
+
 def max_failures_in_window(df):
+    """For each IP, record the highest number of failed logins inside any 10 min WINDOW."""
     fails = df[df["event"] == "failed"].set_index("ts")
     return (fails.groupby("ip")["event"]
                  .rolling(WINDOW).count()
