@@ -1,5 +1,5 @@
 """
-SSH Brute-Force Detector
+SSH Brute-Force Login Attempt Detector
 ------------------------
 Parses an OpenSSH server log (auth.log format) and flags source IPs that show
 brute-force behaviour:
