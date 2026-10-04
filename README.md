@@ -1,6 +1,6 @@
 # SSH-Brute-force-Login-Detection-Project
 
-A Python tool that parses real OpenSSH server logs and flags IP addresses showing brute-force login and username enumeration behaviour. The data is a public sample from an internet-facing research lab server, published in Loghub, a collection of real system logs maintained by the LogPAI research team.
+A Python tool that parses real OpenSSH server logs and flags IP addresses showing brute-force login and username enumeration behaviour. The log data is a public sample from an internet-facing research lab server, published in Loghub, a collection of real system logs maintained by the LogPAI research team.
 
 ## Motivation 
 While on Mastercard's Digital Enablement Service team this summer, I learned how card testing and BIN attacks are detected: fraudsters cycle through card numbers until one is approved, detected by abnormal failure rates from a single source. SSH brute-forcing follows the same pattern, with bots cycling through usernames and passwords until one logs in. I built this to explore how those detection ideas carry over to server security. 
