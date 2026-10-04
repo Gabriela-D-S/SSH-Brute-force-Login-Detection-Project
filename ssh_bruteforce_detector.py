@@ -1,4 +1,4 @@
-"""git status
+"""
 ------------------------
 Parses an OpenSSH server log (auth.log format) and flags source IPs that show
 brute-force behaviour:
