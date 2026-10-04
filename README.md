@@ -20,8 +20,8 @@ While on Mastercard's Digital Enablement Service team this summer, I learned how
 ## Results
 On a 2,000-line sample of real logs from an internet-facing lab server:
 - Parsed 632 authentication events from 25 source IPs
-- Flagged 6 IPs, responsible for 91% (472) of all failed logins (519 total)
-- The most active IP (183.61.140.253) made 279 failed attempts within 10 minutes (max_fails_in_window), cycling through 10 usernames (distinct_usernames)
+- Flagged 9 IPs, responsible for 94% (490) of all failed logins (519 total)
+- The most active IP (183.62.140.253) made 286 failed attempts within 10 minutes (max_fails_in_window), cycling through 10 usernames (distinct_usernames)
 
 ## Data
 [Loghub](https://github.com/logpai/loghub) OpenSSH sample (`OpenSSH_2k.log`), a public collection of real system logs for research.
