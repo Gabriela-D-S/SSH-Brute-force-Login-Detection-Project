@@ -1,0 +1,7 @@
+ip,total_failures,distinct_usernames,first_seen,last_seen,max_fails_in_window,successful_logins,burst,enumeration,possible_compromise
+183.62.140.253,286,10,2025-12-10 10:54:27,2025-12-10 11:04:43,279,0,True,True,False
+187.141.143.180,80,28,2025-12-10 09:12:48,2025-12-10 09:20:02,80,0,True,True,False
+103.99.0.122,46,19,2025-12-10 09:11:20,2025-12-10 11:04:45,30,0,True,True,False
+112.95.230.3,26,3,2025-12-10 07:27:52,2025-12-10 07:28:51,26,0,True,False,False
+185.190.58.151,17,4,2025-12-10 09:07:23,2025-12-10 09:12:59,17,0,True,False,False
+5.188.10.180,17,6,2025-12-10 08:24:40,2025-12-10 08:26:24,17,0,True,True,False
