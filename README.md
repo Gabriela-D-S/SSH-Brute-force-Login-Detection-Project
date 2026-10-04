@@ -3,7 +3,7 @@
 A Python tool that parses real OpenSSH server logs and flags IP addresses showing brute-force login and username enumeration behaviour. The log data is a public sample from an internet-facing research lab server, published in Loghub, a collection of real system logs maintained by the LogPAI research team.
 
 ## Motivation 
-While on Mastercard's Digital Enablement Service team this summer, I learned how card testing and BIN attacks are detected: fraudsters fix the first 6 or 8 digits of a cardholder number (BIN 6 or BIN 8 - bank identification numbers) then cycle through remaining 10 or 8 digit sequences, testing the generated 16 digit PANs (Personal Access Numbers) until one is approved. These attacks are detected by failure rates from a single source. SSH brute-forcing follows the same pattern, with bots cycling through usernames and passwords until one logs in. I built this to explore how those detection ideas carry over to server security. 
+While on Mastercard's Digital Enablement Service team this summer, I learned how card testing and BIN attacks are detected: fraudsters fix the first 6 or 8 digits of a card number (the BIN, or Bank Identification Number) and cycle through the remaining digits, testing each generated 16-digit PAN (Primary Account Number) until one is approved. These attacks are detected by failure rates from a single source. SSH brute-forcing follows the same pattern, with bots cycling through usernames and passwords until one logs in. I built this to explore how those detection ideas carry over to server security. 
 
 ## Detection rules
 | Rule | What it catches | Threshold |
