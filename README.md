@@ -9,7 +9,7 @@ While on Mastercard's Digital Enablement Service team this summer, I learned how
 | Rule | What it catches | Threshold |
 |---|---|---|
 | Failure burst | Many failed logins from one IP in a short window | 5+ failures in a 10-minute sliding window is the threshold set because human users rarely fail more than 2-5 times in a row|
-| Username enumeration | One IP trying many different usernames | 5+ distinct usernames because human users rarely try more than 2-3 user names in a row|
+| Username enumeration | One IP trying many different usernames | 4+ distinct usernames because human users rarely try more than 2-3 user names in a row|
 | Possible compromise | Repeated failures followed by a successful unauthorized login | 5+ failures and 1+ success |
 
 ### Why 5 failures in 10 minutes?
