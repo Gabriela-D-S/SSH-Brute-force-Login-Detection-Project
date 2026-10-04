@@ -10,7 +10,7 @@ While on Mastercard's Digital Enablement Service team this summer, I learned how
 |---|---|---|
 | Failure burst | Many failed logins from one IP in a short window | 5+ failures in a 10-minute sliding window is the threshold set because human users rarely fail more than 2-5 times in a row|
 | Username enumeration | One IP trying many different usernames | 4+ distinct usernames because human users rarely try more than 2-3 user names in a row|
-| Possible compromise | Repeated failures followed by a successful unauthorized login | 5+ failures and 1+ success |
+| Possible compromise | Repeated failures followed by a successful unauthorized login | 5+ failures (a burst) and 1+ success |
 
 ### Why 5 failures in 10 minutes?
 - **Matches Fail2ban's defaults** (`maxretry = 5`, `findtime = 10m`), a widely used tool for blocking SSH brute-force attacks on Linux servers.
