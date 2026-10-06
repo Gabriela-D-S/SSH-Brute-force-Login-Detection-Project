@@ -1,4 +1,4 @@
-# SSH-Brute-force-Login-Detection-Project
+# SSH-Login-Anomaly-Detection-Project
 
 A Python tool that parses real OpenSSH server logs and flags IP addresses showing brute-force login and username enumeration behaviour. The log data is a public sample from an internet-facing research lab server, published in Loghub, a collection of real system logs maintained by the LogPAI research team.
 
